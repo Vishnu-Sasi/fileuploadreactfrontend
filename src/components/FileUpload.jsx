@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./FileUpload.css"
+
 const FileUpload = () => {
-  const [file, setFile] = useState("");
+  const [file, setFile] = useState([]);
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
